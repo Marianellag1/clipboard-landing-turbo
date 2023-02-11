@@ -1,0 +1,30 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --cyan: hsl(171, 66%, 44%);
+    --light: hsl(233, 100%, 69%);
+    --dark: hsl(210, 10%, 33%);
+    --grayish: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
