@@ -39,6 +39,10 @@ body {
     font-size: 18px;
 }
 
+p {
+    color: var(--grayish);
+}
+
 button {
     padding: 0.55rem;
     width: 15%;
@@ -79,15 +83,70 @@ button:active {
     background-image: url(../images/bg-header-desktop.png);
 }
 
-#logo {
+.one figure {
     margin-bottom: 2rem;
+}
+
+.one img {
+    width: 70px;
 }
 
 footer {
     background-color: var(--grayish);
     width: 100%;
+    margin-top: 4rem;
 }
 
-/* .bottom {
-    display: flex;
-} */
+.two {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+#computer {
+    grid-row: 1 / span 2;
+}
+
+#second {
+    grid-row: 1 / span 2;
+    text-align: initial;
+}
+
+.three {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.four {
+    display: inline-flex;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.small {
+    width: 100px;
+}
+
+.five {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.images {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.bottom {
+    display: inline-flex;
+}
+
+#logo {
+    width: 55px;
+}
+
+ul {
+    list-style: none;
+    color: var(--dark);
+}
