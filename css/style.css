@@ -12,6 +12,15 @@
     --light: hsl(233, 100%, 69%);
     --dark: hsl(210, 10%, 33%);
     --grayish: hsl(201, 11%, 66%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 * {
@@ -25,6 +34,60 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
 }
+
+button {
+    padding: 0.55rem;
+    width: 15%;
+    border-radius: 20px;
+    color: var(--white);
+    border: none;
+}
+
+.green {
+    background-color: var(--cyan);
+}
+
+.green:hover {
+    cursor: pointer;
+    color: var(--cyan);
+    border: 2px solid var(--cyan);
+    background-color: var(--white);
+}
+
+.blue {
+    background-color: var(--light);
+}
+
+.blue:hover {
+    cursor: pointer;
+    color: var(--light);
+    border: 2px solid var(--light);
+    background-color: var(--white);
+}
+
+button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+.one {
+    /* padding-top: 4rem; */
+    background-image: url(../images/bg-header-desktop.png);
+}
+
+#logo {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: var(--grayish);
+    width: 100%;
+}
+
+/* .bottom {
+    display: flex;
+} */
