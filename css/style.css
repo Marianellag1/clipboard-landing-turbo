@@ -51,6 +51,13 @@ button {
     border: none;
 }
 
+footer {
+    background-color: var(--grayish);
+    width: 100%;
+    margin-top: 4rem;
+    padding: 4rem 0 4rem 0;
+}
+
 .green {
     background-color: var(--cyan);
 }
@@ -78,8 +85,7 @@ button:active {
     transform: translateY(2px);
 }
 
-.one {
-    /* padding-top: 4rem; */
+.hero {
     background-image: url(../images/bg-header-desktop.png);
 }
 
@@ -91,17 +97,16 @@ button:active {
     width: 70px;
 }
 
-footer {
-    background-color: var(--grayish);
-    width: 100%;
-    margin-top: 4rem;
-}
-
 .two {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 6rem;
     margin-bottom: 2rem;
+}
+
+#computer img {
+    width: 850px;
+    padding-left: 0;
 }
 
 #computer {
@@ -111,6 +116,19 @@ footer {
 #second {
     grid-row: 1 / span 2;
     text-align: initial;
+    padding: 0 8rem 0 8rem;
+}
+
+#second h3 {
+    padding-bottom: .625rem;
+}
+
+#second :nth-child(1) {
+    padding-top: 4rem;
+}
+
+#second p {
+    padding-bottom: 4rem;
 }
 
 .three {
@@ -118,14 +136,27 @@ footer {
     margin-bottom: 2rem;
 }
 
+.three h2 {
+    padding-bottom: 1.25rem;
+}
+
+.three p {
+    padding: 0px 25rem 4rem 25rem;
+}
+
 .four {
     display: inline-flex;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin: 4rem 1rem 3rem 1rem;
 }
 
 .small {
-    width: 100px;
+    width: 300px;
+    margin: 0 6rem rem 0 6rem;
+
+}
+
+.four :nth-child(2) {
+margin: 0 3rem 0 3rem;
 }
 
 .five {
@@ -149,4 +180,13 @@ footer {
 ul {
     list-style: none;
     color: var(--dark);
+}
+
+.bottom {
+    display: grid;
+    grid: auto/ auto auto auto auto auto;
+}
+
+.bottom a {
+    text-decoration: none;
 }
