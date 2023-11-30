@@ -5,6 +5,7 @@
     /* neutral colors */
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
+    --white: #fff;
 }
 
 .attribution {
@@ -17,6 +18,9 @@
 }
 
 body {
+    /* margin and padding remove 'white' border in page. */
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -31,10 +35,58 @@ header {
     align-items: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: .5rem 0 1.5rem 0;
+}
+
 .btn-download {
     display: grid;
     grid-template-columns: auto auto;
+    margin: .25rem 0;
 }
+
+.btn {
+    margin: 0 .50rem;
+    padding: .45rem 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: x-small;
+    letter-spacing: 1px;
+}
+
+/* btn green and blue */
+
+.green {
+    background-color: var(--strong-cyan);
+    color: var(--white);
+    border: none;
+    box-shadow: -1px 1px 5px 1px var(--dark-grayish-blue);
+    /* add shadow */
+}
+
+.green:hover {
+    padding: .45rem 1.2rem;
+    letter-spacing: 2px;
+}
+
+.blue {
+    background-color: var(--light-blue);
+    color: var(--white);
+    border: none;
+    box-shadow: -1px 1px  5px 1px var(--dark-grayish-blue);
+    /* add shadow */
+}
+
+.blue:hover {
+    padding: .45rem 1.2rem;
+    letter-spacing: 2px;
+}
+
 .one {
     display: flex;
     flex-direction: column;
@@ -81,13 +133,24 @@ header {
     grid-template-columns: auto auto auto auto;
 }
 
+.foot {
+    margin: 0 2rem;
+}
 
 
 
-/* .footer {
-    position: fixed;
+
+.footer {
+    background-color: var(--grayish-blue);
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: fit-content; */
+
+    /* position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
-} */
+    text-align: center; */
+}
