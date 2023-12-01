@@ -5,6 +5,7 @@
     /* neutral colors */
     --dark-grayish-blue: hsl(210, 10%, 33%);
     --grayish-blue: hsl(201, 11%, 66%);
+    --light-grayish-blue: hsl(200, 20%, 88%);
     --white: #fff;
 }
 
@@ -29,10 +30,25 @@ body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+    color: var(--dark-grayish-blue);
+}
+
+header p,
+.info p,
+.two p,
+.three p,
+.the-threes p {
+    color: var(--grayish-blue);
+}
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 header h1 {
@@ -41,6 +57,15 @@ header h1 {
 
 header p {
     margin: .5rem 0 1.5rem 0;
+}
+
+.bg-header {
+    margin: 0;
+}
+
+.c-logo {
+    position: absolute;
+    bottom: 180px;
 }
 
 .btn-download {
@@ -78,7 +103,7 @@ header p {
     background-color: var(--light-blue);
     color: var(--white);
     border: none;
-    box-shadow: -1px 1px  5px 1px var(--dark-grayish-blue);
+    box-shadow: -1px 1px 5px 1px var(--dark-grayish-blue);
     /* add shadow */
 }
 
@@ -91,6 +116,7 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 3rem;
 }
 
 .computer-img {
@@ -107,12 +133,15 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem 3rem;
 }
 
 .three {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* change padding top */
+    padding: 2rem 3rem;
 }
 
 .three-lines {
@@ -120,7 +149,20 @@ header p {
     grid-template-columns: auto auto auto;
 }
 
-/* .four */
+.the-threes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.the-threes p {
+    text-align: center;
+}
+
+.five {
+    padding: 2rem 3rem;
+}
 
 .five {
     display: flex;
@@ -130,22 +172,26 @@ header p {
 
 .closing-footer {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
 }
 
 .foot {
     margin: 0 2rem;
 }
 
-
-
+.foot a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
 
 .footer {
-    background-color: var(--grayish-blue);
+    background-color: var(--light-grayish-blue);
     width: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
     /* width: fit-content; */
 
     /* position: fixed;
@@ -153,4 +199,10 @@ header p {
     bottom: 0;
     width: 100%;
     text-align: center; */
+}
+
+.social a {
+    margin: 0 .625rem;
+    text-decoration: none;
+    /* was showing under facebook and twitter */
 }
