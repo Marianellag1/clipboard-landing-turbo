@@ -119,10 +119,10 @@ header p {
     padding: 2rem 3rem;
 }
 
-.computer-img {
+/* .computer-img {
     width: 700px;
     height: 550px;
-}
+} */
 
 .img-info {
     display: grid;
@@ -148,11 +148,13 @@ header p {
     align-items: center;
     /* change padding top */
     padding: 2rem 3rem;
+    margin: 3rem 2rem;
 }
 
 .three-lines {
     display: grid;
     grid-template-columns: auto auto auto;
+    margin: 0 3rem;
 }
 
 .the-threes {
@@ -164,6 +166,15 @@ header p {
 
 .the-threes p {
     text-align: center;
+    margin: 0 1rem;
+}
+
+.the-five {
+    text-align: center;
+}
+
+.the-five img {
+    padding: 0 2rem;
 }
 
 .five {
